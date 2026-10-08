@@ -9,7 +9,7 @@ A minimal English academic homepage hosted at <https://anklesupport.github.io/>.
 - **Publications:** add entries to `publish/publications.json`. See `publish/README.md` for the format.
 - **Appearance:** edit `assets/style.css`.
 
-The initial biography is explicitly a placeholder. The publication list is empty until real entries are added.
+The biography includes the academic affiliation, advisor, and research interests. The publication list is empty until real entries are added.
 
 ## Deployment
 
