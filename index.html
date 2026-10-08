@@ -1,81 +1,37 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="anklesupport 的个人主页，记录想法、项目与日常。">
-  <meta name="theme-color" content="#f5f3ed">
-  <title>anklesupport · 个人主页</title>
-  <style>
-    :root { color-scheme: light; --paper: #f5f3ed; --ink: #252c27; --muted: #626b63; --green: #325d45; --line: #d9ded5; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
-    a { color: inherit; }
-    a:focus-visible { outline: 3px solid var(--green); outline-offset: 6px; }
-    .page { width: min(1080px, calc(100% - 64px)); margin: 0 auto; }
-    header { min-height: 100px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); }
-    .brand { font-weight: 650; font-size: 18px; text-decoration: none; letter-spacing: -.5px; }
-    .brand span { color: var(--green); }
-    .header-link { font-size: 14px; color: var(--muted); text-decoration: none; }
-    .header-link:hover { color: var(--green); text-decoration: underline; }
-    main { padding: 100px 0 64px; }
-    .intro { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: center; }
-    .eyebrow { display: flex; align-items: center; gap: 9px; color: var(--green); font-size: 12px; letter-spacing: 2px; font-weight: 600; }
-    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
-    h1 { font-size: clamp(38px, 5.5vw, 66px); line-height: 1.2; letter-spacing: -2.5px; margin: 26px 0 24px; font-weight: 650; }
-    h1 span { display: block; }
-    .name { color: var(--green); overflow-wrap: anywhere; }
-    .description { font-size: 16px; line-height: 1.9; color: var(--muted); margin: 0; max-width: 460px; }
-    .button { display: inline-flex; align-items: center; gap: 25px; background: var(--green); color: white; border-radius: 6px; padding: 15px 22px; margin-top: 32px; font-size: 14px; text-decoration: none; transition: background .15s; }
-    .button:hover { background: #244a34; }
-    .visual { aspect-ratio: 1; border: 1px solid var(--line); border-radius: 50%; position: relative; display: grid; place-items: center; background: radial-gradient(circle, #e8eee3 0%, #edf0e7 52%, transparent 53%); }
-    .visual::before { content: ""; position: absolute; inset: 13%; border: 1px dashed #b6c5b4; border-radius: 50%; }
-    .monogram { color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: clamp(100px, 15vw, 180px); font-style: italic; line-height: 1; padding-bottom: 20px; }
-    .visual-label { position: absolute; bottom: 20%; font-family: monospace; font-size: 10px; letter-spacing: 3px; color: var(--muted); }
-    .note { margin-top: 88px; padding: 30px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 150px 1fr; gap: 24px; }
-    .note-label { font-size: 12px; letter-spacing: 1px; color: var(--green); font-weight: 600; padding-top: 3px; }
-    h2 { margin: 0 0 9px; font-size: 18px; font-weight: 600; }
-    .note p { color: var(--muted); font-size: 14px; line-height: 1.8; margin: 0; }
-    footer { padding: 0 0 30px; display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 12px; line-height: 1.7; }
-    @media (max-width: 680px) {
-      .page { width: calc(100% - 40px); }
-      header { min-height: 78px; }
-      main { padding-top: 58px; padding-bottom: 36px; }
-      .intro { grid-template-columns: 1fr; gap: 40px; }
-      h1 { letter-spacing: -1.5px; }
-      .visual { width: 210px; justify-self: center; }
-      .monogram { font-size: 110px; }
-      .visual-label { font-size: 8px; }
-      .note { margin-top: 48px; grid-template-columns: 1fr; gap: 14px; }
-      footer { flex-wrap: wrap; }
-    }
-  </style>
+  <meta name="description" content="Yihong Hang's academic homepage: biography and publications.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Yihong Hang</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/publications.js" defer></script>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <a class="brand" href="./">anklesupport<span>.</span></a>
-      <a class="header-link" href="https://github.com/anklesupport">GitHub ↗</a>
-    </header>
-    <main>
-      <section class="intro" aria-labelledby="intro-title">
-        <div>
-          <div class="eyebrow"><span class="dot" aria-hidden="true"></span> HELLO, WORLD</div>
-          <h1 id="intro-title"><span>你好，我是</span><span class="name">anklesupport.</span></h1>
-          <p class="description">欢迎来到我的个人主页。<br>这里将用来记录我的想法、项目与日常。<br>一切刚刚开始，很高兴与你在这里相遇。</p>
-          <a class="button" href="https://github.com/anklesupport">访问我的 GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="visual" aria-hidden="true"><span class="monogram">a.</span><span class="visual-label">A SPACE OF MY OWN</span></div>
-      </section>
-      <section class="note" aria-labelledby="note-title">
-        <div class="note-label">001 / 站点测试</div>
-        <div>
-          <h2 id="note-title">个人主页的第一步。</h2>
-          <p>这是一个测试页面。如果你能看到它，说明页面已成功加载。更多关于我、项目和文章的内容，之后会在这里慢慢补充。</p>
-        </div>
-      </section>
-    </main>
-    <footer><span>© anklesupport</span><span>个人主页 · 测试版</span></footer>
-  </div>
+  <main class="page">
+    <section class="profile" aria-labelledby="profile-name">
+      <figure class="portrait">
+        <img src="assets/profile.png" alt="Yihong Hang's GitHub avatar" width="160" height="160">
+        <figcaption>GitHub avatar</figcaption>
+      </figure>
+      <div class="introduction">
+        <h1 id="profile-name">Yihong Hang</h1>
+        <p class="page-label">Academic Homepage</p>
+        <p>Welcome to my academic homepage. My biography and research interests will be added here.</p>
+        <nav aria-label="Profile links">
+          <a href="https://github.com/anklesupport">GitHub</a>
+          <a href="#publications">Publications</a>
+        </nav>
+      </div>
+    </section>
+    <section class="publications" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+      <p class="empty-state" id="publication-status" role="status">Publications will be added soon.</p>
+      <ol id="publication-list" class="publication-list" hidden></ol>
+    </section>
+    <footer>Yihong Hang</footer>
+  </main>
 </body>
 </html>

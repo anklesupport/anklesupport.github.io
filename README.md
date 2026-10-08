@@ -1,16 +1,18 @@
-# anklesupport 的个人主页
+# Yihong Hang's academic homepage
 
-一个无需构建、无需安装依赖的静态测试页，适用于 GitHub Pages。
+A minimal English academic homepage hosted at <https://anklesupport.github.io/>.
 
-- `index.html`：主页，包含桌面和手机布局。
-- `.nojekyll`：告诉 GitHub Pages 直接提供静态文件。
+## Edit the homepage
 
-## 预览
+- **Name and biography:** edit `index.html`.
+- **Photo:** replace `assets/profile.png` with your portrait. The initial image is your public GitHub avatar; update its alternative text and remove the "GitHub avatar" caption when replacing it.
+- **Publications:** add entries to `publish/publications.json`. See `publish/README.md` for the format.
+- **Appearance:** edit `assets/style.css`.
 
-直接用浏览器打开 `index.html`。
+The initial biography is explicitly a placeholder. The publication list is empty until real entries are added.
 
-## 发布
+## Deployment
 
-将文件推送至 `anklesupport/anklesupport.github.io` 的 `main` 分支。在仓库 **Settings → Pages** 中选择 **Deploy from a branch**，分支选择 **main**，目录选择 **/(root)**，然后保存。
+No build or dependencies are required. GitHub Pages serves the root of the `main` branch. Push changes to `main` to update the website automatically.
 
-部署完成后访问 <https://anklesupport.github.io/>。
+For local preview, use a static HTTP server so the publication data can be loaded. Opening the HTML directly as a local file does not support the publication data request.

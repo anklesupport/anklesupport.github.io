@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color: #24292f;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 32px; }
+body { margin: 0; font-size: 16px; line-height: 1.75; }
+a { color: #245c96; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid #245c96; outline-offset: 4px; }
+.page { width: min(800px, calc(100% - 48px)); margin: 88px auto 0; }
+.profile { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 40px; align-items: start; }
+.portrait { margin: 0; }
+.portrait img { display: block; width: 160px; height: 160px; object-fit: cover; border-radius: 4px; background: #f4f4f4; }
+.portrait figcaption { margin-top: 8px; font-size: 11px; color: #6b7280; text-align: center; }
+h1 { margin: -9px 0 0; font-size: 32px; line-height: 1.45; font-weight: 600; letter-spacing: -.6px; }
+.page-label { margin: 3px 0 17px; font-size: 14px; color: #626a73; }
+.introduction > p:not(.page-label) { margin: 0 0 16px; }
+nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
+.publications { margin-top: 52px; border-top: 1px solid #e5e7eb; padding-top: 24px; }
+h2 { margin: 0 0 22px; font-size: 23px; font-weight: 600; letter-spacing: -.3px; }
+.empty-state { color: #626a73; font-size: 15px; margin: 0; }
+.publication-list { list-style: none; padding: 0; margin: 0; }
+.publication-list li + li { margin-top: 26px; }
+.publication-list h3 { margin: 0 0 4px; font-size: 16px; line-height: 1.5; font-weight: 600; }
+.publication-list p { margin: 0; font-size: 14px; }
+.publication-meta { color: #626a73; }
+.publication-links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 5px; font-size: 13px; }
+footer { margin-top: 64px; padding: 20px 0 28px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #626a73; }
+[hidden] { display: none !important; }
+@media (max-width: 560px) {
+  .page { width: calc(100% - 40px); margin-top: 40px; }
+  .profile { grid-template-columns: 1fr; gap: 24px; }
+  .portrait { width: 128px; }
+  .portrait img { width: 128px; height: 128px; }
+  h1 { font-size: 29px; }
+  .publications { margin-top: 36px; }
+  footer { margin-top: 44px; }
+}
