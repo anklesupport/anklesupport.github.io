@@ -15,8 +15,7 @@ a:focus-visible { outline: 2px solid #245c96; outline-offset: 4px; }
 .page { width: min(800px, calc(100% - 48px)); margin: 88px auto 0; }
 .profile { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 40px; align-items: start; }
 .portrait { margin: 0; }
-.portrait img { display: block; width: 160px; height: 160px; object-fit: cover; border-radius: 4px; background: #f4f4f4; }
-.portrait figcaption { margin-top: 8px; font-size: 11px; color: #6b7280; text-align: center; }
+.portrait img { display: block; width: 160px; height: 200px; object-fit: cover; border: 1px solid #e5e7eb; border-radius: 50%; background: #f4f4f4; }
 h1 { margin: -9px 0 0; font-size: 32px; line-height: 1.45; font-weight: 600; letter-spacing: -.6px; }
 .page-label { margin: 3px 0 17px; font-size: 14px; color: #626a73; }
 .introduction > p:not(.page-label) { margin: 0 0 16px; }
@@ -36,7 +35,7 @@ footer { margin-top: 64px; padding: 20px 0 28px; border-top: 1px solid #e5e7eb; 
   .page { width: calc(100% - 40px); margin-top: 40px; }
   .profile { grid-template-columns: 1fr; gap: 24px; }
   .portrait { width: 128px; }
-  .portrait img { width: 128px; height: 128px; }
+  .portrait img { width: 128px; height: 160px; }
   h1 { font-size: 29px; }
   .publications { margin-top: 36px; }
   footer { margin-top: 44px; }
